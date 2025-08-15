@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FinTrack • Reports</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>FinTrack</h1>
+    <nav>
+      <a href="index.html">Login</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="transactions.html">Transactions</a>
+      <a href="categories.html">Categories</a>
+      <a href="reports.html">Reports</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Reports & Analytics</h2>
+      <p>Monthly and category-wise insights will appear here.</p>
+    </section>
+
+    <section>
+      <h3>Monthly Trend</h3>
+      <!-- canvas placeholder; charts will be drawn via JS later -->
+      <div style="height:320px">
+        <canvas id="chart-monthly"></canvas>
+      </div>
+    </section>
+
+    <section>
+      <h3>By Category</h3>
+      <div style="height:320px">
+        <canvas id="chart-category"></canvas>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <small>© 2025 FinTrack</small>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

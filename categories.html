@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FinTrack • Categories</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>FinTrack</h1>
+    <nav>
+      <a href="index.html">Login</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="transactions.html">Transactions</a>
+      <a href="categories.html">Categories</a>
+      <a href="reports.html">Reports</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Add Category</h2>
+      <form id="cat-form">
+        <label for="cat-name">Category Name</label>
+        <input id="cat-name" name="name" type="text" placeholder="e.g., Food, Rent, Salary" required />
+        
+        <label for="cat-type">Type</label>
+        <select id="cat-type" name="type" required>
+          <option value="expense">Expense</option>
+          <option value="income">Income</option>
+        </select>
+
+        <button type="submit">Add</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Categories</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th><th>Type</th>
+          </tr>
+        </thead>
+        <tbody id="cat-table">
+          <!-- rows inserted dynamically -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <small>© 2025 FinTrack</small>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
